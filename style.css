@@ -1,0 +1,128 @@
+:root{
+    /*colores*/
+    --color-orange:hsl(25, 97%, 53%);
+    --color-white:hsl(0, 0%, 100%);
+    --color-grey:hsl(217, 12%, 63%);
+    --color-greifuerte:hsl(216, 12%, 54%);
+    --color-azuloscuro:hsl(213, 19%, 18%);
+    --color-azulmasoscuro:hsl(216, 12%, 8%);
+
+    /*fuentes*/
+    --fuente-overpass:Overpass;
+
+}
+
+@font-face {
+    font-family: Overpass;
+    src: url("https://fonts.google.com/specimen/Overpass");
+}
+body{
+    background-color: var(--color-azulmasoscuro);
+    margin:0;
+    padding: 0;
+}
+.entero{
+    background-color: var(--color-azuloscuro);
+    margin: auto;
+    margin-top: 10%;
+    width: 320px;
+    padding:40px ;
+    border-radius: 30px;
+ 
+}
+.circulo{
+    background-color: var(--color-azulmasoscuro);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.circulo img{
+    margin-top: 4px;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 5px;
+}
+
+.contenedor_texto{
+    color: white;
+    font-family: var(--fuente-overpass);
+    font-size: 16px;
+}
+
+.contenedor_texto p{
+    line-height: 30px;
+}
+.contenedor_numeros{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.numero1,.numero2,.numero3,.numero4,.numero5{
+    height: 60px;
+    width: 60px;
+    padding-left: 12px;
+    background-color: hsl(216, 9%, 43%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.numero1:hover,.numero2:hover,.numero3:hover,.numero4:hover,.numero5:hover{
+    background-color: var(--color-grey);
+    color: white;
+}
+.numero1:focus,.numero2:focus,.numero3:focus,.numero4:focus,.numero5:focus{
+    background-color: var(--color-orange);
+    color: white;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: var(--color-orange);
+    color: white;
+    letter-spacing: 10px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: var(--color-orange);
+}
+
+.gracias{
+    display: none;
+}
+
+
+.gracias{
+    background-color: var(--color-azuloscuro);
+    margin: auto;
+    margin-top: 10%;
+    width: 320px;
+    padding:40px ;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+.oculto{
+    color: var(--color-orange);
+    background-color: rgb(1, 4, 45);
+    border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
